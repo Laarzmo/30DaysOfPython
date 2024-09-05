@@ -1,0 +1,20 @@
+print(2 + 3)
+print(2 - 3)
+print(2 * 3)
+print(2 % 3)
+print(2 / 3)
+print(2 ** 3)
+print(2 // 3)
+print('First Last')
+print('Finland')
+print('I am enjoyin 30 days of Python')
+print(type(10))
+print(type(9.8))
+print(type(4 - 4j))
+print(['First Last', 'python','Finland'])
+
+# level 3
+import math
+p1 = (2,3)
+p2 = (10,8)
+print(math.sqrt((p1[0] - p2[0]) ** 2 + (p1[1] - p2[1]) ** 2))
