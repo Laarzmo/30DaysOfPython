@@ -3,7 +3,7 @@ age = int()
 height = float()
 comp = complex()
 
-'''
+
 print('The area of the triangle is:',float(input('Base:')) * float(input('Height:')) * 0.5)
 
 print('The perimater of the triangle is:',float(input('Sida a: ')) + float(input('Side b: ')) + float(input('Side c: ')))
@@ -41,7 +41,7 @@ print(int(9.8) == 10)
 
 print(float(input('Hours: ')) * float(input('rate: ')))
 print(int(input('Years lived: '))*3600*365)
-'''
+
 
 x = 1
 print(x,1,x,x**2,x**3)
