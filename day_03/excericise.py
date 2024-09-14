@@ -40,7 +40,7 @@ print(type('10') == type(10))
 print(int(9.8) == 10)
 
 print(float(input('Hours: ')) * float(input('rate: ')))
-print(int(input('Years lived: '))*3600*365)
+print(int(input('Years lived: '))*3600*24*365)
 
 
 x = 1
