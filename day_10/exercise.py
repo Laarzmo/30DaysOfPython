@@ -2917,10 +2917,19 @@ for c in countries_data:
             langu_dct[l] += 1
         else:
             langu_dct[l] = 1
-print(sorted(langu_dct.items(),key=lambda x: x[1]))
-
+langu_sorted = sorted(langu_dct.items(),key=lambda x: x[1],reverse=True)
+x = 0
+for l in langu_sorted:
+    print(l)
+    x += 1
+    if x > 9: break
 # Find the 10 most populated countries in the world
 popu_dct = dict()
 for c in countries_data:
         popu_dct[c['name']] = c['population']
-print(sorted(popu_dct.items(),key=lambda x: x[1] ))
+popu_sorted = sorted(popu_dct.items(),key=lambda x: x[1],reverse=True )
+x = 0
+for ps in popu_sorted:
+    print(ps)
+    x += 1
+    if x == 10: break
