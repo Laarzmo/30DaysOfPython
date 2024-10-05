@@ -167,7 +167,7 @@ def is_empty(p):
     return(len(p) == 0)
 print(is_empty('d'))
 # Write different functions which take lists. They should calculate_mean, calculate_median, calculate_mode, calculate_range, calculate_variance, calculate_std (standard deviation).
-def calculate_mean(lst):
+# def calculate_mean(lst):
      
 # calculate_median, 
 # calculate_mode, 
@@ -179,13 +179,27 @@ def calculate_mean(lst):
 # Exercises: Level 3
 # 
 # Write a function called is_prime, which checks if a number is prime.
-# 
+def is_prime(n: int):
+    for i in range(2,n):
+        if n % i == 0: return(False)
+    return(True)
+for x in range(1,51):
+    print(f'{x} is prime: {is_prime(x)}')
 # Write a functions which checks if all items are unique in the list.
-# 
+def is_unique(lst: list):
+    lst_l = len(lst)
+    set_l = len(set(lst))
+    print(lst_l,set_l)
+    return(lst_l == set_l)
+print(is_unique(['asdf','qwer','asd']))
 # Write a function which checks if all the items of the list are of the same data type.
-# 
+def is_same_type(lst: list):
+    for i in range(1,len(lst)):
+        if type(lst[0]) != type(lst[i]): return(False)
+    return(True)
+print(is_same_type([5,5,6,3,2,4,56,34,2.1,]))
 # Write a function which check if provided variable is a valid python variable
-# 
+
 # Go to the data folder and access the countries-data.py file.
 # 
 # Create a function called the most_spoken_languages in the world. It should return 10 or 20 most spoken languages in the world in descending order
